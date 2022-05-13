@@ -25,6 +25,8 @@ spec:
       initdbScriptsCM: dbinit
       podLabels: 
         app: postgresdb
+      persistence:
+        storageClass: direct-csi-min-io
     pgpool:
       tls:
         enabled: false
@@ -32,6 +34,3 @@ spec:
         app: postgresdb
     service:
       portName: tcp-postgresql
-    primary:
-      persistence:
-        storageClass: direct-csi-min-io

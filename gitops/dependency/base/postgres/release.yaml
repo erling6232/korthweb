@@ -32,5 +32,6 @@ spec:
         app: postgresdb
     service:
       portName: tcp-postgresql
-  persistence:
-    storageClass: direct-csi-min-io
+  primary:
+    persistence:
+      storageClass: direct-csi-min-io

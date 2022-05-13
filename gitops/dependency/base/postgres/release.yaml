@@ -25,9 +25,8 @@ spec:
       initdbScriptsCM: dbinit
       podLabels: 
         app: postgresdb
-    postgresql-ha:
-      persistence:
-        storageClass: direct-csi-min-io
+    global:
+      storageClass: direct-csi-min-io
     pgpool:
       tls:
         enabled: false

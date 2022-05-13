@@ -11,7 +11,7 @@ spec:
       name: tls-dicom
       protocol: TLS
     hosts:
-    - "www-235.medtek.haukeland.no"
+    - "www-233.medtek.haukeland.no"
     tls:
       mode: SIMPLE
       credentialName: orthweb-secret # secret in the same namespace as the istio-ingressgateway resource
@@ -22,7 +22,7 @@ metadata:
   name: dcm-vs
 spec:
   hosts:
-  - "www-235.medtek.haukeland.no"
+  - "www-233.medtek.haukeland.no"
   gateways:
   - dcm-gw
   tcp:

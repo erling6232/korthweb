@@ -32,3 +32,4 @@ spec:
         app: postgresdb
     service:
       portName: tcp-postgresql
+  storageClass: direct-csi-min-io

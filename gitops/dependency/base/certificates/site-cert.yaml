@@ -11,7 +11,7 @@ spec:
     organizations:
       - digihunch
   dnsNames:
-    - www-235.medtek.haukeland.no
+    - www-233.medtek.haukeland.no
   privateKey:
     algorithm: RSA 
     size: 2048

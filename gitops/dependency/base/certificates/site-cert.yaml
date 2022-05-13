@@ -3,7 +3,7 @@ kind: Certificate
 metadata:
   name: orthweb-cert
 spec:
-  commonName: orthweb.com
+  commonName: medtek.haukeland.no
   secretName: orthweb-secret
   duration: 2160h
   renewBefore: 72h
@@ -11,8 +11,7 @@ spec:
     organizations:
       - digihunch
   dnsNames:
-    - web.orthweb.com
-    - dicom.orthweb.com
+    - www-235.medtek.haukeland.no
   privateKey:
     algorithm: RSA 
     size: 2048

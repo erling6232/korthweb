@@ -30,7 +30,7 @@ patches:
       - op: replace
         path: /spec/servers/0/hosts
         value:
-        - dicom.dev.orthweb.com
+        - www-235.medtek.haukeland.no
   - target:
       kind: Gateway
       name: web-gw
@@ -38,7 +38,7 @@ patches:
       - op: replace
         path: /spec/servers/0/hosts
         value:
-        - web.dev.orthweb.com
+        - www-235.medtek.haukeland.no
   - target:
       kind: VirtualService 
       name: dcm-vs
@@ -46,7 +46,7 @@ patches:
       - op: replace
         path: /spec/hosts
         value:
-        - dicom.dev.orthweb.com
+        - www-235.medtek.haukeland.no
   - target:
       kind: VirtualService
       name: web-vs
@@ -54,7 +54,7 @@ patches:
       - op: replace
         path: /spec/hosts
         value:
-        - web.dev.orthweb.com
+        - www-235.medtek.haukeland.no
   - target:
       kind: AuthorizationPolicy
       name: authz-policy-orthanc

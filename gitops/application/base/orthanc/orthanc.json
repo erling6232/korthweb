@@ -1,6 +1,9 @@
 {
   "Name" : "Orthanc Configuration",
   "RemoteAccessAllowed" : true,
+  "RegisteredUsers" : {
+    "eran" : "langtOgGodt"
+  },
   "SslEnabled" : false,
   "DicomTlsEnabled" : false,
   "DicomTlsRemoteCertificateRequired" : false,

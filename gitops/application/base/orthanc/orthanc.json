@@ -5,10 +5,19 @@
   "RegisteredUsers" : {
     "eran" : "langtOgGodt"
   },
+  "DicomServerEnabled" : true,
+  "DicomAET" : "ORTHANC",
+  "DicomCheckCalledAet" : false,
+  "DicomAlwaysAllowStore" : true,
+  "DicomAlwaysAllowEcho" : true,
+  "DicomCheckModalityHost" : false,
   "SslEnabled" : false,
   "MetricsEnables" : true,
   "DicomTlsEnabled" : false,
   "DicomTlsRemoteCertificateRequired" : false,
+  "DicomModalities" : {
+    "konsoll" : [ "konsoll", "konsoll.medtek.haukeland.no", 104 ]
+  },
   "PostgreSQL" : {
     "EnableIndex" : true,
     "EnableStorage" : true,

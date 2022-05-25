@@ -3,7 +3,7 @@
   "RemoteAccessAllowed" : true,
   "AuthenticationEnabled" : true,
   "RegisteredUsers" : {
-    "eran" : "langtOgGodt"
+    "eran" : "langtOg Godt"
   },
   "DicomServerEnabled" : true,
   "DicomAET" : "ORTHANC",

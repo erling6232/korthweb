@@ -1,6 +1,7 @@
 {
   "Name" : "Orthanc Configuration",
   "RemoteAccessAllowed" : true,
+  "AuthenticationEnabled" : true,
   "RegisteredUsers" : {
     "eran" : "langtOgGodt"
   },

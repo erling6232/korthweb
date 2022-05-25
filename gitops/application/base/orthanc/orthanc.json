@@ -6,6 +6,7 @@
     "eran" : "langtOgGodt"
   },
   "SslEnabled" : false,
+  "MetricsEnables" : true,
   "DicomTlsEnabled" : false,
   "DicomTlsRemoteCertificateRequired" : false,
   "PostgreSQL" : {

@@ -13,9 +13,6 @@ spec:
       protocol: TCP
     hosts:
     - "www-234.medtek.haukeland.no"
-    tls:
-      mode: SIMPLE
-      credentialName: orthweb-secret # secret in the same namespace as the istio-ingressgateway resource
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService

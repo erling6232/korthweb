@@ -9,7 +9,8 @@ spec:
   - port:
       number: 11112
       name: tls-dicom
-      protocol: TLS
+      # protocol: TLS
+      protocol: TCP
     hosts:
     - "www-233.medtek.haukeland.no"
     tls:

@@ -30,7 +30,7 @@ patches:
       - op: replace
         path: /spec/servers/0/hosts
         value:
-        - www-234.medtek.haukeland.no
+        - www-233.medtek.haukeland.no
   - target:
       kind: Gateway
       name: web-gw
@@ -46,7 +46,7 @@ patches:
       - op: replace
         path: /spec/hosts
         value:
-        - www-234.medtek.haukeland.no
+        - www-233.medtek.haukeland.no
   - target:
       kind: VirtualService
       name: web-vs

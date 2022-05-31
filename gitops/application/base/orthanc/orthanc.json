@@ -32,7 +32,8 @@
   "Plugins" : [
     "/usr/local/share/orthanc/plugins/libOrthancPostgreSQLIndex.so",
     "/usr/local/share/orthanc/plugins/libOrthancPostgreSQLStorage.so",
-    "/usr/local/share/orthanc/plugins/libOrthancWebViewer.so"
+    "/usr/local/share/orthanc/plugins/libOrthancWebViewer.so",
+    "/usr/local/share/orthanc/plugins/libOrthancPython.so"
   ],
   "PythonScript" : "/tmp/orthanc/script.py"
 }

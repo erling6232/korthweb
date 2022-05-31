@@ -64,7 +64,7 @@ spec:
           subPath: "orthanc.json"
           readOnly: true
         - name: python-script
-          mountPath: "/tmp/orthanc"
+          mountPath: "/tmp/orthanc/script.py"
           subPath: "script.py"
           readOnly: true
         readinessProbe:

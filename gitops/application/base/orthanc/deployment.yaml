@@ -21,7 +21,7 @@ spec:
           defaultMode: 0755
       - name: python-script
         configMap:
-          name: orthanc-pythoon-script
+          name: orthanc-python-script
           defaultMode: 493
       containers:
       - name: orthanc

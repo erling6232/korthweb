@@ -10,8 +10,8 @@ transformers:
 images:
 - name: orthanc-plugins
   # newName: jodogne/orthanc-python
-  # newName: osimis/orthanc
-  newName: imageserver.medtek.haukeland.no/orthanc-python-argo
+  newName: osimis/orthanc
+  # newName: imageserver.medtek.haukeland.no/orthanc-python-argo
   newTag: latest
 patchesStrategicMerge:
 - |-

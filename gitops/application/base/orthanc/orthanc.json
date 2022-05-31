@@ -35,5 +35,6 @@
     "/usr/local/share/orthanc/plugins/libOrthancWebViewer.so",
     "/usr/local/share/orthanc/plugins/libOrthancPython.so"
   ],
-  "PythonScript" : "/tmp/orthanc/process.py"
+  "PythonScript" : "/tmp/orthanc/process.py",
+  "StableAge": 60
 }

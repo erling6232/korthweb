@@ -9,8 +9,9 @@ transformers:
   - labels.yaml
 images:
 - name: orthanc-plugins
-  newName: jodogne/orthanc-python
+  # newName: jodogne/orthanc-python
   # newName: osimis/orthanc
+  newName: imageserver.medtek.haukeland.no/orthanc-python-argo
   newTag: latest
 patchesStrategicMerge:
 - |-

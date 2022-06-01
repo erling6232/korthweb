@@ -11,8 +11,9 @@ images:
 - name: orthanc-plugins
   # newName: jodogne/orthanc-python
   # newName: osimis/orthanc
-  newName: imageserver.medtek.haukeland.no/orthanc-python-argo:1.0.1
-  newTag: latest
+  # newTag: latest
+  newName: imageserver.medtek.haukeland.no/orthanc-python-argo
+  newTag: 1.0.1
 patchesStrategicMerge:
 - |-
   apiVersion: v1

@@ -10,6 +10,7 @@
   "DicomCheckCalledAet" : false,
   "DicomAlwaysAllowStore" : true,
   "DicomAlwaysAllowEcho" : true,
+  "DicomAlwaysAllowGet" : true,
   "DicomCheckModalityHost" : false,
   "SslEnabled" : false,
   "MetricsEnables" : true,

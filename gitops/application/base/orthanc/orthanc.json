@@ -10,14 +10,15 @@
   "DicomCheckCalledAet" : false,
   "DicomAlwaysAllowStore" : true,
   "DicomAlwaysAllowEcho" : true,
-  "DicomAlwaysAllowGet" : true,
+  "DicomAlwaysAllowGet" : false,
   "DicomCheckModalityHost" : false,
   "SslEnabled" : false,
   "MetricsEnables" : true,
   "DicomTlsEnabled" : false,
   "DicomTlsRemoteCertificateRequired" : false,
   "DicomModalities" : {
-    "konsoll" : [ "konsoll", "konsoll.medtek.haukeland.no", 104 ]
+    "konsoll" : [ "konsoll", "konsoll.medtek.haukeland.no", 104 ],
+    "orthanc" : [ "ORTHANC", "127.0.0.1", 4242 ]
   },
   "PostgreSQL" : {
     "EnableIndex" : true,

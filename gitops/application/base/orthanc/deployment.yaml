@@ -26,7 +26,7 @@ spec:
       containers:
       - name: orthanc
         image: orthanc-plugins
-        args: ["/run/secrets/"]
+        args: ["--verbose", "/run/secrets/"]
         ports:
           - containerPort: 8042
         #  - containerPort: 4242

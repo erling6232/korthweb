@@ -1,0 +1,10 @@
+apiVersion: builtin
+kind: LabelTransformer
+metadata:
+  name: labels
+labels:
+  org: bhs 
+  workload: orthweb
+fieldSpecs:
+  - path: metadata/labels
+    create: true

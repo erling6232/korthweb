@@ -19,30 +19,32 @@ spec:
         configMap:
           name: orthanc-app
           defaultMode: 0755
-      - name: python-script
-        configMap:
-          name: orthanc-python-script
-          defaultMode: 493
+      securityContext:
+        seccompProfile:
+          type: RuntimeDefault
       containers:
       - name: orthanc
         image: orthanc-plugins
-        args: ["--verbose", "/run/secrets/"]
+        args: ["/run/secrets/"]
+        securityContext:
+          capabilities:
+            drop:
+              - ALL
+          allowPrivilegeEscalation: false
         ports:
           - containerPort: 8042
-        #  - containerPort: 4242
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "250m"
+            memory: "128Mi"
+            cpu: "100m"
           limits:
             memory: "128Mi" 
-            cpu: "500m"
         env:
           - name: DB_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: postgres-ha-postgresql-ha-postgresql 
-                key: postgresql-password
+                key: password
           - name: DB_USERNAME
             valueFrom:
               configMapKeyRef:
@@ -75,8 +77,22 @@ spec:
             scheme: HTTP
             httpHeaders:
               - name: Authorization
-                value: Basic ZXJhbjpsYW5ndE9nIEdvZHQ=
+                value: Basic YWRtaW46b3J0aGFuYw== 
           initialDelaySeconds: 10
           periodSeconds: 20
           successThreshold: 1
           timeoutSeconds: 2
+        livenessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /app/explorer.html
+            port: 8042
+            scheme: HTTP
+            httpHeaders:
+              - name: Authorization
+                value: Basic YWRtaW46b3J0aGFuYw== 
+          initialDelaySeconds: 60
+          periodSeconds: 120
+          successThreshold: 1
+          timeoutSeconds: 2
+      automountServiceAccountToken: false

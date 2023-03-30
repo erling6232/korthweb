@@ -13,7 +13,10 @@
   "DicomAlwaysAllowGet" : false,
   "DicomCheckModalityHost" : false,
   "SslEnabled" : false,
-  "MetricsEnables" : true,
+  "AuthenticationEnabled" : true,
+  "RegisteredUsers" : {
+    "admin" : "orthanc"
+  },
   "DicomTlsEnabled" : false,
   "DicomTlsRemoteCertificateRequired" : false,
   "DicomModalities" : {
@@ -24,7 +27,7 @@
     "EnableIndex" : true,
     "EnableStorage" : true,
     "Host" : "${DB_ADDR}",
-    "Port" : ${DB_PORT},
+    "Port" : 5432,
     "Database" : "orthancdb",
     "Username" : "${DB_USERNAME}",
     "Password" : "${DB_PASSWORD}",
@@ -32,11 +35,8 @@
     "Lock" : false
   },
   "Plugins" : [
-    "/usr/local/share/orthanc/plugins/libOrthancPostgreSQLIndex.so",
-    "/usr/local/share/orthanc/plugins/libOrthancPostgreSQLStorage.so",
-    "/usr/local/share/orthanc/plugins/libOrthancWebViewer.so",
-    "/usr/local/share/orthanc/plugins/libOrthancPython.so"
-  ],
-  "PythonScript" : "/tmp/orthanc/process.py",
-  "StableAge": 60
+    "/usr/share/orthanc/plugins-available/libOrthancPostgreSQLIndex.so",
+    "/usr/share/orthanc/plugins-available/libOrthancPostgreSQLStorage.so",
+    "/usr/share/orthanc/plugins-available/libOrthancWebViewer.so"
+  ]
 }

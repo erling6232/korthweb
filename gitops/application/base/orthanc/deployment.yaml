@@ -77,7 +77,6 @@ spec:
             scheme: HTTP
             httpHeaders:
               - name: Authorization
-                value: Basic YWRtaW46WWJZWDJKV2k3Um9m
           initialDelaySeconds: 10
           periodSeconds: 20
           successThreshold: 1

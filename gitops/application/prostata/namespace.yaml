@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: orthweb-prostata
+  labels:
+    istio-injection: enabled

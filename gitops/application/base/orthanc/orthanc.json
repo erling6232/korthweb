@@ -17,7 +17,7 @@
   "RegisteredUsers" : {
     "admin" : "orthanc"
   },
-  "DicomTlsEnabled" : false,
+  "DicomTlsEnabled" : true,
   "DicomTlsRemoteCertificateRequired" : false,
   "DicomModalities" : {
     "konsoll" : [ "konsoll", "konsoll.medtek.haukeland.no", 104 ],

@@ -13,7 +13,7 @@ patches:
       - op: replace
         path: /spec/dnsNames 
         value:
-        - www-233.medtek.haukeland.no 
+        - www-231.medtek.haukeland.no 
     target:
       kind: Certificate
       name: orthweb-cert

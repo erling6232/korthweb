@@ -8,15 +8,15 @@ spec:
   servers:
   - port:
       number: 11112
-      name: tls-dicom
-      # name: dicom
+      # name: tls-dicom
+      name: dicom
       # protocol: TLS
       protocol: TCP
     hosts:
     - "www-231.medtek.haukeland.no"
-    tls:
-      mode: SIMPLE
-      credentialName: orthweb-secret # secret in the same namespace as the istio-ingressgateway resource
+    #tls:
+    #  mode: SIMPLE
+    #  credentialName: orthweb-secret # secret in the same namespace as the istio-ingressgateway resource
 ---
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService

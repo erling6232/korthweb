@@ -1,28 +1,28 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
 metadata:
-  name: bhs-application
+  name: prostata-application
   namespace: flux-system
 spec:
   interval: 10m0s
   dependsOn:
-    - name: bhs-dependency
+    - name: prostata-dependency
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./gitops/application/bhs
+  path: ./gitops/application/prostata
   prune: true
   validation: client
   healthChecks:  
     - apiVersion: networking.istio.io/v1beta1 
       kind: Gateway
       name: web-gw
-      namespace: bhs-orthweb
+      namespace: orthweb-prostata
     - apiVersion: networking.istio.io/v1beta1 
       kind: Gateway
       name: dcm-gw
-      namespace: bhs-orthweb
+      namespace: orthweb-prostata
     - apiVersion: apps/v1
       kind: Deployment
       name: orthanc
-      namespace: bhs-orthweb
+      namespace: orthweb-prostata

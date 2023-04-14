@@ -4,4 +4,5 @@ metadata:
   name: default-peer-authentication
 spec:
   mtls:
-    mode: STRICT
+    # mode: STRICT
+    mode: PERMISSIVE

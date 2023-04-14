@@ -15,6 +15,7 @@ images:
   # newTag: 1.0.0
   digest: sha256:20413096878fb56bf8d09af08cf4055993dbcf507526f0561b26fc4d0ed7affc
 patchesStrategicMerge:
+- python-script.yaml
 - |-
   apiVersion: v1
   kind: ConfigMap

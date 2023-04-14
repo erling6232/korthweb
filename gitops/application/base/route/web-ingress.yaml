@@ -11,7 +11,7 @@ spec:
       name: https
       protocol: HTTPS
     hosts:
-    - "www-233.medtek.haukeland.no"
+    - "www-231.medtek.haukeland.no"
     tls:
       mode: SIMPLE
       credentialName: orthweb-secret # secret in the same namespace as the istio-ingressgateway resource
@@ -22,7 +22,7 @@ metadata:
   name: web-vs
 spec:
   hosts:
-  - "www-233.medtek.haukeland.no"
+  - "www-231.medtek.haukeland.no"
   gateways:
   - web-gw
   http:

@@ -9,7 +9,7 @@
   "DicomAlwaysAllowGet" : false,
   "DicomCheckModalityHost" : false,
   "SslEnabled" : false,
-  "AuthenticationEnabled" : false,
+  "AuthenticationEnabled" : true,
   "RegisteredUsers" : {
     "admin" : "orthanc"
   },

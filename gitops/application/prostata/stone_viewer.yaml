@@ -18,41 +18,41 @@ spec:
           - name: ORTHANC__DICOM_WEB__SERIES_METADATA: "MainDicomTags"
           - name: ORTHANC__DICOM_WEB__STUDIES_METADATA: "MainDicomTags"
 
-          - name: ORTHANC__EXTRA_MAIN_DICOM_TAGS: |
-        {
-          "Instance" : [
-              "Rows",
-              "Columns",
-              "ImageType",
-              "SOPClassUID",
-              "ContentDate",
-              "ContentTime",
-              "FrameOfReferenceUID",
-              "PixelSpacing",
-              "SpecificCharacterSet",
-              "BitsAllocated",
-              "BitsStored",
+          - name: ORTHANC__EXTRA_MAIN_DICOM_TAGS: |-
+            {
+              "Instance" : [
+                  "Rows",
+                  "Columns",
+                  "ImageType",
+                  "SOPClassUID",
+                  "ContentDate",
+                  "ContentTime",
+                  "FrameOfReferenceUID",
+                  "PixelSpacing",
+                  "SpecificCharacterSet",
+                  "BitsAllocated",
+                  "BitsStored",
+    
+                  "RescaleSlope",
+                  "RescaleIntercept",
+                  "SliceThickness",
+                  "WindowCenter",
+                  "WindowWidth",
+                  "PhotometricInterpretation",
+                  "PixelRepresentation"
+              ],
+              "Series" : [
+                  "TimezoneOffsetFromUTC",
+                  "PerformedProcedureStepStartDate",
+                  "PerformedProcedureStepStartTime",
+                  "RequestAttributesSequence"
+              ],
+              "Study": [
+                  "TimezoneOffsetFromUTC"
+              ],
+              "Patient": []
+              }
 
-              "RescaleSlope",
-              "RescaleIntercept",
-              "SliceThickness",
-              "WindowCenter",
-              "WindowWidth",
-              "PhotometricInterpretation",
-              "PixelRepresentation"
-          ],
-          "Series" : [
-              "TimezoneOffsetFromUTC",
-              "PerformedProcedureStepStartDate",
-              "PerformedProcedureStepStartTime",
-              "RequestAttributesSequence"
-          ],
-          "Study": [
-              "TimezoneOffsetFromUTC"
-          ],
-          "Patient": []
-          }
-
-      # StoneViewer configurations
+          # StoneViewer configurations
           - name: ORTHANC__STONE_WEB_VIEWER__DATE_FORMAT: "YYYY/MM/DD"
 

@@ -18,6 +18,7 @@ images:
 patchesStrategicMerge:
 - python-script.yaml
 - envs.yaml
+- stone_viewer.yaml
 - |-
   apiVersion: v1
   kind: ConfigMap

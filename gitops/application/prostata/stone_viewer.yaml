@@ -24,39 +24,33 @@ spec:
 
           - name: ORTHANC__EXTRA_MAIN_DICOM_TAGS
             value: |-
-            {
-              "Instance" : [
-                  "Rows",
-                  "Columns",
-                  "ImageType",
-                  "SOPClassUID",
-                  "ContentDate",
-                  "ContentTime",
-                  "FrameOfReferenceUID",
-                  "PixelSpacing",
-                  "SpecificCharacterSet",
-                  "BitsAllocated",
-                  "BitsStored",
-    
-                  "RescaleSlope",
-                  "RescaleIntercept",
-                  "SliceThickness",
-                  "WindowCenter",
-                  "WindowWidth",
-                  "PhotometricInterpretation",
+              Instance:
+                  "Rows"
+                  "Columns"
+                  "ImageType"
+                  "SOPClassUID"
+                  "ContentDate"
+                  "ContentTime"
+                  "FrameOfReferenceUID"
+                  "PixelSpacing"
+                  "SpecificCharacterSet"
+                  "BitsAllocated"
+                  "BitsStored"
+                  "RescaleSlope"
+                  "RescaleIntercept"
+                  "SliceThickness"
+                  "WindowCenter"
+                  "WindowWidth"
+                  "PhotometricInterpretation"
                   "PixelRepresentation"
-              ],
-              "Series" : [
-                  "TimezoneOffsetFromUTC",
-                  "PerformedProcedureStepStartDate",
-                  "PerformedProcedureStepStartTime",
-                  "RequestAttributesSequence"
-              ],
-              "Study": [
+              Series:
                   "TimezoneOffsetFromUTC"
-              ],
-              "Patient": []
-              }
+                  "PerformedProcedureStepStartDate"
+                  "PerformedProcedureStepStartTime"
+                  "RequestAttributesSequence"
+              Study:
+                  "TimezoneOffsetFromUTC"
+              Patient:
 
           # StoneViewer configurations
           - name: ORTHANC__STONE_WEB_VIEWER__DATE_FORMAT

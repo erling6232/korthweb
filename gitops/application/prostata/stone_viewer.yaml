@@ -25,31 +25,31 @@ spec:
           - name: ORTHANC__EXTRA_MAIN_DICOM_TAGS
             value: |-
               Instance:
-                  "Rows"
-                  "Columns"
-                  "ImageType"
-                  "SOPClassUID"
-                  "ContentDate"
-                  "ContentTime"
-                  "FrameOfReferenceUID"
-                  "PixelSpacing"
-                  "SpecificCharacterSet"
-                  "BitsAllocated"
-                  "BitsStored"
-                  "RescaleSlope"
-                  "RescaleIntercept"
-                  "SliceThickness"
-                  "WindowCenter"
-                  "WindowWidth"
-                  "PhotometricInterpretation"
-                  "PixelRepresentation"
+                - Rows
+                - Columns
+                - ImageType
+                - SOPClassUID
+                - ContentDate
+                - ContentTime
+                - FrameOfReferenceUID
+                - PixelSpacing
+                - SpecificCharacterSet
+                - BitsAllocated
+                - BitsStored
+                - RescaleSlope
+                - RescaleIntercept
+                - SliceThickness
+                - WindowCenter
+                - WindowWidth
+                - PhotometricInterpretation
+                - PixelRepresentation
               Series:
-                  "TimezoneOffsetFromUTC"
-                  "PerformedProcedureStepStartDate"
-                  "PerformedProcedureStepStartTime"
-                  "RequestAttributesSequence"
+                - TimezoneOffsetFromUTC
+                - PerformedProcedureStepStartDate
+                - PerformedProcedureStepStartTime
+                - RequestAttributesSequence
               Study:
-                  "TimezoneOffsetFromUTC"
+                - TimezoneOffsetFromUTC
               Patient:
 
           # StoneViewer configurations

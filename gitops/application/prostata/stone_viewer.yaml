@@ -24,18 +24,18 @@ spec:
 
           - name: ORTHANC__EXTRA_MAIN_DICOM_TAGS
             value: |-
-              Instance: ["Rows", "Columns", "ImageType", "SOPClassUID",
+              - Instance: ["Rows", "Columns", "ImageType", "SOPClassUID",
                 "ContentDate", "ContentTime", "FrameOfReferenceUID",
                 "PixelSpacing", "SpecificCharacterSet", "BitsAllocated",
                 "BitsStored", "RescaleSlope", "RescaleIntercept",
                 "SliceThickness", "WindowCenter", "WindowWidth",
                 "PhotometricInterpretation", "PixelRepresentation"]
-              Series: ["TimezoneOffsetFromUTC",
+              - Series: ["TimezoneOffsetFromUTC",
                 "PerformedProcedureStepStartDate",
                 "PerformedProcedureStepStartTime",
                 "RequestAttributesSequence"]
-              Study: ["TimezoneOffsetFromUTC"]
-              Patient: []
+              - Study: ["TimezoneOffsetFromUTC"]
+              - Patient: []
 
           # StoneViewer configurations
           - name: ORTHANC__STONE_WEB_VIEWER__DATE_FORMAT

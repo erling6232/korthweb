@@ -17,6 +17,7 @@ images:
   digest: sha256:fa7feaf645f1170a440707381cd7c5375401cc516bf8a237d12ee8e6b7baf416
 patchesStrategicMerge:
 - python-script.yaml
+- envs.yaml
 - |-
   apiVersion: v1
   kind: ConfigMap
@@ -90,11 +91,3 @@ patches:
         path: /spec/rules/0/from/0/source/namespaces
         value: 
         - orthweb-prostata
-  - target:
-      kind: Deployment
-      name: orthanc
-    patch: |-
-      - op: add
-        env:
-          ORTHANC__NAME: "Prostata Orthanc"
-          OSIMIS_WEB_VIEWER1_PLUGIN_ENABLED: "true"

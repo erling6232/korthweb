@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  template:
+    spec:
+      containers:
+      - name: orthanc
+        env:
+        - name: ORTHANC__NAME
+          value: Prostata Orthanc
+        - name: OSIMIS_WEB_VIEWER1_PLUGIN_ENABLED
+          value: true
+

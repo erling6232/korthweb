@@ -1,11 +1,11 @@
 repo_name: erling6232/korthweb
-report_id: d97141f032918b89201ec38c23d7df06
+report_id: d12f677f589e78047888ab4a42566757
 repo_type: Public
-timestamp: '2023-11-10T07:49:53+00:00'
+timestamp: '2023-12-14T10:13:16+00:00'
 requested_by: erling6232
 provider: github
 branch: main
-detected_tools_count: 6
+detected_tools_count: 8
 tools:
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -37,6 +37,17 @@ tools:
   sub_category: Templating Languages & Extensions
   image_url: https://img.stackshare.io/service/3693/smarty.png
   detection_source: Repo Metadata
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source: helm/orthanc/templates/NOTES.txt
+  last_updated_by: Yi Lu
+  last_updated_on: 2022-01-09 23:12:22.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -57,6 +68,17 @@ tools:
   detection_source: ".github/workflows/action.yml"
   last_updated_by: Yi Lu
   last_updated_on: 2023-03-01 23:05:43.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source: helm/orthanc/templates/NOTES.txt
+  last_updated_by: Yi Lu
+  last_updated_on: 2022-01-09 23:12:22.000000000 Z
 - name: Shell
   description: A shell is a text-based terminal, used for manipulating programs and
     files. Shell scripts typically manage program execution.

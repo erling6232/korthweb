@@ -1,11 +1,12 @@
 repo_name: erling6232/korthweb
 report_id: d97141f032918b89201ec38c23d7df06
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-10T07:49:53+00:00'
+timestamp: '2024-02-29T18:31:45+00:00'
 requested_by: erling6232
 provider: github
 branch: main
-detected_tools_count: 6
+detected_tools_count: 8
 tools:
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/erling6232/korthweb
   detection_source: Repo Metadata
 - name: SQL
   description: It is a domain-specific language used in programming
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/erling6232/korthweb/blob/main/gitops/dependency/base/postgres/db_create.sql
   detection_source: gitops/dependency/base/postgres/db_create.sql
   last_updated_by: Yi Lu
   last_updated_on: 2022-01-06 18:04:57.000000000 Z
@@ -36,7 +39,20 @@ tools:
   category: Languages & Frameworks
   sub_category: Templating Languages & Extensions
   image_url: https://img.stackshare.io/service/3693/smarty.png
+  detection_source_url: https://github.com/erling6232/korthweb
   detection_source: Repo Metadata
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source_url: https://github.com/erling6232/korthweb/blob/main/helm/orthanc/templates/NOTES.txt
+  detection_source: helm/orthanc/templates/NOTES.txt
+  last_updated_by: Yi Lu
+  last_updated_on: 2022-01-09 23:12:22.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -45,6 +61,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/erling6232/korthweb
   detection_source: Repo Metadata
 - name: GitHub Actions
   description: Automate your workflow from idea to production
@@ -54,9 +71,22 @@ tools:
   category: Build, Test, Deploy
   sub_category: Continuous Integration
   image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/erling6232/korthweb/blob/main/.github/workflows/action.yml
   detection_source: ".github/workflows/action.yml"
   last_updated_by: Yi Lu
   last_updated_on: 2023-03-01 23:05:43.000000000 Z
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source_url: https://github.com/erling6232/korthweb/blob/main/helm/orthanc/templates/NOTES.txt
+  detection_source: helm/orthanc/templates/NOTES.txt
+  last_updated_by: Yi Lu
+  last_updated_on: 2022-01-09 23:12:22.000000000 Z
 - name: Shell
   description: A shell is a text-based terminal, used for manipulating programs and
     files. Shell scripts typically manage program execution.
@@ -66,4 +96,5 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/erling6232/korthweb
   detection_source: Repo Metadata
